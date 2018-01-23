@@ -1,0 +1,11 @@
+CRConfirmOrderServiceProtocol、CRGoodsDetailServiceProtocol等
+自定义的protocol
+
+CRConfirmOrderServiceProvide、CRGoodsDetailServiceProvide等
+中间层 实现protocol 在实现方法中创建对象 
+
+CRProtocolManager
+单例 保存protocol与中间层provide的对应关系 
+
+使用：
+访问CRProtocolManager根据protocol获取provide，调用provide的protocol方法获得对象，实现解耦。
